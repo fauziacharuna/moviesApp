@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+import android.app.ActionBar;
 import com.android.fauziachmadharunadev.moviesapp.R;
 import com.bumptech.glide.Glide;
 
@@ -30,6 +30,9 @@ public class DetailsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+
+
+
         ivBackdrop = (ImageView) findViewById(R.id.iv_backdrop);
         ivPoster = (ImageView) findViewById(R.id.iv_poster);
         tvTitle = (TextView) findViewById(R.id.tv_title);

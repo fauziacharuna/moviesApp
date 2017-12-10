@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
 
 <RelativeLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_details"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,13 +14,14 @@ xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.android.fauziachmadharunadev.moviesapp.ui.ui.MainActivity">
 
 
+
     <ImageView
         android:id="@+id/iv_backdrop"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
+        android:fitsSystemWindows="true"
         android:src="@mipmap/ic_launcher" />
-
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -116,6 +121,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|right"
                 android:layout_marginTop="5dp"
+                android:padding="5dp"
                 android:text="@string/synopsis" />
 
             <TextView
@@ -138,6 +144,7 @@ xmlns:tools="http://schemas.android.com/tools"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|right"
+                    android:padding="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/synopsis" />
             </android.support.v7.widget.CardView>
@@ -160,4 +167,5 @@ xmlns:tools="http://schemas.android.com/tools"
         android:typeface="normal" />
 
 </RelativeLayout>
+</ScrollView>
 

@@ -7,11 +7,17 @@
     android:background="@android:color/white"
     tools:context="com.android.fauziachmadharunadev.moviesapp.ui.ui.MainActivity">
 
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_activity"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
 
 <android.support.v4.widget.SwipeRefreshLayout
     android:id="@+id/swipe_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_movies"
         android:layout_width="match_parent"
